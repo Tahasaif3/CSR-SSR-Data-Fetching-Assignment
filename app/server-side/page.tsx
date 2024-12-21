@@ -20,7 +20,7 @@ export default async function ServerSidePage() {
 
   return (
     <div className="min-h-screen py-12">
-      <h1 className="text-4xl font-bold mb-8 text-center text-black">Server-side Data Fetching: Books</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Server-side Data Fetching: Books</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
         {books.map((book: Book) => (
           <Card key={book.id} className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
