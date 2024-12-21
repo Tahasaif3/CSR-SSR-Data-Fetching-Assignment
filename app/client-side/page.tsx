@@ -40,7 +40,7 @@ export default function ClientSidePage() {
 
   return (
     <div className="min-h-screen py-12">
-      <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">Client-side Data Fetching: Products</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center text-[#808080]">Client-side Data Fetching: Products</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto px-4">
         {products.map((product, index) => (
           <motion.div
@@ -49,7 +49,7 @@ export default function ClientSidePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
           >
-            <Card className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+            <Card className="shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
               <div className="h-64 relative overflow-hidden">
                 <Image
                   src={product.image}
@@ -61,12 +61,12 @@ export default function ClientSidePage() {
                 />
               </div>
               <CardContent className="p-6">
-                <h2 className="text-xl font-semibold mb-4 text-gray-800 line-clamp-2">{product.title}</h2>
-                <p className="text-gray-600 mb-4">Category: {product.category}</p>
+                <h2 className="text-xl font-semibold mb-4 text-[#808080] line-clamp-2">{product.title}</h2>
+                <p className="text-[#808080] mb-4">Category: {product.category}</p>
                 <p className="text-2xl font-bold text-blue-600">${product.price.toFixed(2)}</p>
               </CardContent>
-              <CardFooter className="bg-blue-500 p-4">
-                <span className="text-white font-semibold">Product ID: {product.id}</span>
+              <CardFooter className="p-4">
+                <span className="text-[#808080] font-semibold">Product ID: {product.id}</span>
               </CardFooter>
             </Card>
           </motion.div>

@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-12">
       <motion.h1 
-        className="text-5xl font-bold mb-12 text-center text-gray-800"
+        className="text-5xl font-bold mb-12 text-center text-[#808080]"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -67,7 +67,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.6 }}
       >
-        <p className="text-xl text-gray-800 mb-4">Explore the power of different data fetching techniques</p>
+        <p className="text-xl text-[#808080] mb-4">Explore the power of different data fetching techniques</p>
         <div className="flex justify-center space-x-4">
           <a href="https://nextjs.org/docs" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-600 transition-colors">Next.js Docs</a>
           <a href="https://react.dev" target="_blank" rel="noopener noreferrer" className="text-green-500 hover:text-green-600 transition-colors">React Docs</a>
