@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold hover:text-gray-200 transition-colors">
-          Data Fetching Demo
+          Data Fetching
         </Link>
 
         {/* Desktop Navigation */}
