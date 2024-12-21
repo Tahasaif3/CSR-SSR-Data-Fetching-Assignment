@@ -174,14 +174,6 @@ export default async function ServerSidePage() {
 
 ---
 
-## Future Enhancements
-
-- Add pagination to handle large datasets.
-- Include error handling UI for failed API requests.
-- Optimize CSR with data caching using libraries like SWR or React Query.
-
----
-
 ## Acknowledgments
 
 - [Fake Store API](https://fakestoreapi.com/)
